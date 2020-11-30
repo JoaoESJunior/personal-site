@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <title>João.Jr</title>
+    <link rel="shortcut icon" href="Icone-titulo.png" >
+
+	<!--Referência ao css-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-light bg-dark">
+            <div class="container">
+                <div id="conjunto-imagem-nome">
+                    <img class="rounded-circle mr-2 ml-3 mb-2" src="Icone-titulo2.fw.png" alt="Logo pessoal">
+                    <a class="navbar-brand text-danger">João E.S. Júnior</a>
+                </div>
+                <div id="conjunto-botoes-nav justify-content-end">
+                    <ul class="nav justify-content-end ml-1">
+                        <li class="nav-item">
+                        <a class="btn btn-outline-light ml-1" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="btn btn-primary-dark btn-dark ml-1" href="Sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="btn btn-primary-dark btn-dark ml-1" href="Contato.html">Contato</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="section-um">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="Foto-carrosel-1.fw.png" alt="Primeiro Slide">
+                <!--https://source.unsplash.com/500x500/?corporative-->
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Foto-carrosel-2.fw.png" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Foto-carrosel-3.fw.png" alt="Terceiro Slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-dark text-center my-1 mt-3">
+                    <h2>Cotações do dia</h2>
+                </div>
+            </div>
+            <div class="row col-sm-12  ml-0">
+                <div class="col-sm-4 my-3">
+                    <div class="card" style="width: auto;">
+                        <img class="card-img-top" src="https://source.unsplash.com/300x100/?money-dolar" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="https://mercadocotacao.com/dolar-hoje/" id="USD" title="Cotação do Dólar Americano Hoje" name="mercado_cotacao">Dólar Hoje</a><script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 my-3  ml-0">
+                    <div class="card justify-content-center" style="width: auto;">
+                        <img class="card-img-top" src="https://source.unsplash.com/300x100/?euro" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <a href="https://mercadocotacao.com/euro-hoje/" id="EUR" title="Cotação do Euro Hoje" name="mercado_cotacao">Euro Hoje</a><script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 my-3  ml-0">
+                    <div class="card justify-content-end" style="width: auto;">
+                        <img class="card-img-top" src="https://source.unsplash.com/300x100/?bitcoin" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <p class="card-text">                                
+                                <a href="https://mercadocotacao.com/bitcoin-hoje/" id="BTC" title="Cotação do Bitcoin Hoje" name="mercado_cotacao">Bitcoin</a><script async src="https://mercadocotacao.com/money/mercadocotacao.js"></script>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="col-sm-12 text-center my-40 mt-30 justify-content-center navbar bg-dark text-white">
+            <p class="mb-40">Desenvolvido por João E.S. Júnior</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
